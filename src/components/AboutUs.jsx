@@ -51,11 +51,7 @@ const AboutUs = () => {
               </Typography>
             </Box>
             <Box>
-              <img
-                src={aboutUsImg}
-                width="300px"
-                style={{ marginRight: "50px" }}
-              />
+              <img src={aboutUsImg} width="300px" />
             </Box>
           </Box>
         </Box>
