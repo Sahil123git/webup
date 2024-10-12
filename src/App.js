@@ -9,6 +9,7 @@ import Header from "./components/Header";
 import Home from "./components/Home";
 import AboutUs from "./components/AboutUs";
 import ContactUs from "./components/ContactUs";
+import Footer from "./components/Footer";
 let theme = createTheme();
 theme = responsiveFontSizes(theme);
 const App = () => {
@@ -19,6 +20,7 @@ const App = () => {
         <Home />
         <AboutUs />
         <ContactUs />
+        <Footer />
       </main>
     </ThemeProvider>
   );

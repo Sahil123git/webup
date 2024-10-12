@@ -5,7 +5,8 @@ import Features from "./Features";
 
 const Home = () => {
   return (
-    <Box id="home">
+    <Box>
+      <Box id="home">&nbsp;</Box>
       <Box
         sx={{
           display: "flex",

@@ -13,24 +13,13 @@ import {
   ListItemButton,
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
-const drawerWidth = 240;
 const Header = () => {
-  const [anchorEl, setAnchorEl] = useState(null);
   const [drawerOpen, setDrawerOpen] = useState(false);
-
-  const handleMenuClick = (event) => {
-    setAnchorEl(event.currentTarget);
-  };
-
-  const handleMenuClose = () => {
-    setAnchorEl(null);
-  };
-
   const toggleDrawer = (open) => () => {
     setDrawerOpen(open);
   };
   return (
-    <AppBar position="static" sx={{ background: "#007bff" }}>
+    <AppBar position="sticky" sx={{ background: "#007bff" }}>
       <Toolbar>
         <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
           WebFolio

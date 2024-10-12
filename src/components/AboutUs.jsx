@@ -7,11 +7,16 @@ const AboutUs = () => {
     <Box
       sx={{
         padding: { xs: "0 30px", sm: "0 60px", md: "0 130px" },
-        margin: "80px 0px",
       }}
-      id="about"
     >
-      <Box sx={{ padding: "30px 30px", backgroundColor: "#fff6f6" }}>
+      <Box id="about">&nbsp;</Box>
+      <Box
+        sx={{
+          marginTop: "60px",
+          padding: "30px 30px",
+          backgroundColor: "#fff6f6",
+        }}
+      >
         <Box>
           <Typography variant="h4" component="h4" sx={{ fontWeight: "700" }}>
             About Us
