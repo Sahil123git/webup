@@ -36,16 +36,12 @@ To run the project locally, follow these steps:
 
 2.  Clone the repository:
 
-Bash
-
 ```
 git clone https://github.com/Sahil123git/webup.git
 
 ```
 
 2.  Navigate to the project directory:
-
-Code snippet
 
 ```
 cd web-solutions-website
