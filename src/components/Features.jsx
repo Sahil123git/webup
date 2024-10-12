@@ -12,6 +12,10 @@ const Features = () => {
           flexDirection: "column",
           alignItems: "center",
           marginTop: "50px",
+          padding: {
+            xs: "0px 20px 0 20px",
+            md: "0px",
+          },
         }}
       >
         <Typography variant="h4" component="h4" sx={{ fontWeight: "700" }}>
@@ -20,7 +24,12 @@ const Features = () => {
         <Typography
           variant="body1"
           component="body"
-          sx={{ fontSize: "18px", fontWeight: "500", color: "grey" }}
+          sx={{
+            fontSize: "18px",
+            fontWeight: "500",
+            color: "grey",
+            textAlign: "center",
+          }}
         >
           Discover the result-driven services that position us as a leading web
           development company.
@@ -28,10 +37,19 @@ const Features = () => {
       </Box>
       <Box
         sx={{
-          marginTop: "50px",
-          display: "flex",
-          flexWrap: "wrap",
+          margin: {
+            xs: "50px 50px 0 50px",
+            md: "50px 100px 0 100px",
+            lg: "50px 130px 0 130px",
+          },
+          gap: "50px 50px",
+          display: "grid",
           justifyContent: "center",
+          gridTemplateColumns: {
+            xs: "auto",
+            md: "auto auto",
+            lg: "auto auto auto",
+          },
         }}
       >
         {featuresArray.map((ele) => (

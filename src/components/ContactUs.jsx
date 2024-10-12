@@ -39,8 +39,13 @@ const ContactUs = () => {
   };
 
   return (
-    //  sx={{ padding: "0 130px", margin: "40px 0px" }}
-    <Box sx={{ padding: "0 130px", margin: "40px 0px" }}>
+    <Box
+      sx={{
+        padding: { xs: "0 10px", sm: "0 30px", md: "0 100px" },
+        margin: "40px 0px",
+      }}
+      id="contact"
+    >
       <Box sx={{ padding: "30px 30px" }}>
         <Typography variant="h4" component="h4" sx={{ fontWeight: "700" }}>
           Contact Us
@@ -50,7 +55,7 @@ const ContactUs = () => {
         </Typography>
 
         <Grid2 container spacing={2} sx={{ marginTop: "20px" }}>
-          <Grid2 size={6}>
+          <Grid2 size={{ xs: 12, md: 6 }}>
             <TextField
               id="outlined-basic"
               label="First Name"
@@ -59,31 +64,31 @@ const ContactUs = () => {
               sx={{ width: "100%" }}
             />
           </Grid2>
-          <Grid2 size={6}>
+          <Grid2 size={{ xs: 12, md: 6 }}>
             <TextField
               inputRef={lastNameRef}
               id="outlined-basic"
               label="Last Name"
-              sx={{ width: "100%" }}
               variant="outlined"
+              sx={{ width: "100%" }}
             />
           </Grid2>
-          <Grid2 size={6}>
+          <Grid2 size={{ xs: 12, md: 6 }}>
             <TextField
               inputRef={locationRef}
-              sx={{ width: "100%" }}
               id="outlined-basic"
               label="Location"
               variant="outlined"
+              sx={{ width: "100%" }}
             />
           </Grid2>
-          <Grid2 size={6}>
+          <Grid2 size={{ xs: 12, md: 6 }}>
             <TextField
               inputRef={numberRef}
-              sx={{ width: "100%" }}
               id="outlined-basic"
               label="Contact Number"
               variant="outlined"
+              sx={{ width: "100%" }}
             />
           </Grid2>
           <Grid2 size={12}>

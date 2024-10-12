@@ -17,8 +17,14 @@ img {
   border: 2px solid grey;
   border-radius: 20px;
   padding: 20px;
-  margin-right: 50px;
-  margin-bottom: 50px;
+}
+.drawerStyle .MuiDrawer-paper {
+  width: 50%;
+}
+@media screen and (max-width: 600px) {
+  .drawerStyle .MuiDrawer-paper {
+    width: 80%;
+  }
 }
 .textareaDesign {
   height: 200px !important;

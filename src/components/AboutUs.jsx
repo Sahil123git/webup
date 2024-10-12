@@ -1,11 +1,17 @@
 import React from "react";
-import { Box, Grid2, Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import aboutUsImg from "../assets/images/about.jpg";
 
 const AboutUs = () => {
   return (
-    <Box sx={{ padding: "0 130px", margin: "40px 0px" }}>
-      <Box sx={{ padding: "30px 30px", backgroundColor: "#f9f9f9" }}>
+    <Box
+      sx={{
+        padding: { xs: "0 30px", sm: "0 60px", md: "0 130px" },
+        margin: "80px 0px",
+      }}
+      id="about"
+    >
+      <Box sx={{ padding: "30px 30px", backgroundColor: "#fff6f6" }}>
         <Box>
           <Typography variant="h4" component="h4" sx={{ fontWeight: "700" }}>
             About Us
@@ -24,7 +30,16 @@ const AboutUs = () => {
             marketing to help businesses grow online.
           </Typography>
 
-          <Box sx={{ display: "flex", justifyContent: "space-between" }}>
+          <Box
+            sx={{
+              display: "flex",
+              justifyContent: "space-between",
+              flexDirection: {
+                xs: "column",
+                lg: "row",
+              },
+            }}
+          >
             <Box sx={{ maxWidth: "700px" }}>
               <Typography sx={{ marginBottom: "30px" }}>
                 <strong>Mission: </strong>
@@ -50,7 +65,14 @@ const AboutUs = () => {
                 genuinely want to help your company reach its potential.
               </Typography>
             </Box>
-            <Box>
+            <Box
+              sx={{
+                marginTop: {
+                  xs: "20px",
+                  lg: "0px",
+                },
+              }}
+            >
               <img src={aboutUsImg} width="300px" />
             </Box>
           </Box>

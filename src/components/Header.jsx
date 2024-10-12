@@ -54,33 +54,35 @@ const Header = () => {
             Contact Us
           </Button>
         </Box>
-        <Drawer anchor="right" open={drawerOpen} onClose={toggleDrawer(false)}>
-          <List sx={{ width: "300px" }}>
-            <ListItem sx={{ padding: 0 }}>
+        <Drawer
+          anchor="right"
+          className="drawerStyle"
+          open={drawerOpen}
+          onClose={toggleDrawer(false)}
+        >
+          <List>
+            <ListItem sx={{ padding: 0, borderBottom: "2px solid #9c9c9c" }}>
               <ListItemButton
                 component="a"
                 href="#home"
                 onClick={toggleDrawer(false)}
-               
               >
                 <ListItemText primary="Home" />
               </ListItemButton>
             </ListItem>
-            <ListItem sx={{ padding: 0 }}>
+            <ListItem sx={{ padding: 0, borderBottom: "2px solid #9c9c9c" }}>
               <ListItemButton
                 component="a"
                 href="#about"
-                
                 onClick={toggleDrawer(false)}
               >
                 <ListItemText primary="About Us" />
               </ListItemButton>
             </ListItem>
-            <ListItem sx={{ padding: 0 }}>
+            <ListItem sx={{ padding: 0, borderBottom: "2px solid #9c9c9c" }}>
               <ListItemButton
                 component="a"
                 href="#contact"
-                
                 onClick={toggleDrawer(false)}
               >
                 <ListItemText primary="Contact" />
