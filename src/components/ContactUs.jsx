@@ -44,9 +44,9 @@ const ContactUs = () => {
         padding: { xs: "0 10px", sm: "0 30px", md: "0 100px" },
         margin: "40px 0px",
       }}
-      id="contact"
     >
-      <Box sx={{ padding: "30px 30px" }}>
+      <Box id="contact">&nbsp;</Box>
+      <Box sx={{ marginTop: "30px", padding: "30px 30px" }}>
         <Typography variant="h4" component="h4" sx={{ fontWeight: "700" }}>
           Contact Us
         </Typography>
